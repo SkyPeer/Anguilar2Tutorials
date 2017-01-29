@@ -21,15 +21,20 @@ gulp.task('debug:html', function () {
         '!application/index.html'])
         .pipe(gulp.dest('build/debug/app'))
 });
+gulp.task('debug:css', function () {
+    return gulp
+        .src(['application/**/*.css'])
+        .pipe(gulp.dest('build/debug/app'))
+});
 gulp.task('debug:sass', function () {
     return gulp
         .src(['application/**/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('build/debug'))
+        .pipe(gulp.dest('build/debug/app'))
 });
-gulp.task('debug:inject', ['debug:html', 'debug:sass'], function () {
+gulp.task('debug:inject', ['debug:html'/*, 'debug:sass'*/], function () {
     let libs = gulp.src([
         'node_modules/zone.js/dist/zone.js',
         'node_modules/reflect-metadata/Reflect.js',

@@ -4,8 +4,8 @@ import {Component} from "@angular/core";
 @Component({
     moduleId: module.id,
     selector: 'application',
-    templateUrl: 'index.html'
+    templateUrl: 'layout.html'
 })
-export class Test {
+export class Layout {
 
 }
