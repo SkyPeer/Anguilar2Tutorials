@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import {Hero} from "./hero";
-
-
+import {Hero} from "../../entity/hero";
 
 const HEROES: Hero[] = [
     { id: 11, name: 'Mr. Nice' },
@@ -18,7 +16,7 @@ const HEROES: Hero[] = [
 
 @Component({
     moduleId: module.id,
-    //selector: 'my-app',
+    //selector: 'my-app', забыл зачем закоментариили???
     templateUrl: 'page3.html',
     styleUrls: ['page3.css']
 })

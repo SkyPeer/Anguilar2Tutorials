@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import {Hero} from "../page3/hero";
-/*import {Hero} from "./hero";*/
+import {Hero} from "../../entity/hero";
 
 @Component({
-    moduleId: module.id, /*Зачем оно надо ???*/
-    //selector: 'my-app',  /*почему комментируем?*/
+    moduleId: module.id,
+    //selector: 'my-app',
     templateUrl: 'page4.html',
     styleUrls: ['page4.css']
 
