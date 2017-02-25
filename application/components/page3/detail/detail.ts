@@ -10,6 +10,6 @@ import {Hero} from "../../../entity/hero";
 
 export class HeroDetailComponent {
     @Input()
-hero: Hero;
+    hero: Hero;
 
 }

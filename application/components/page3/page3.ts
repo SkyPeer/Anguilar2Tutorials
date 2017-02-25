@@ -16,12 +16,12 @@ const HEROES: Hero[] = [
 
 @Component({
     moduleId: module.id,
-    //selector: 'my-app', забыл зачем закоментариили???
+    //selector: 'my-app',
     templateUrl: 'page3.html',
     styleUrls: ['page3.css']
 })
 export class Page3 {
-    title = 'Tour of Heroes';
+    //title = 'Tour of Heroes';
     heroes = HEROES;
     selectedHero: Hero;
 
