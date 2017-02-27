@@ -12,6 +12,7 @@ export class Page4 {
     title = 'Tour of Heroes';
     hero: Hero = {
         id: 1,
-        name: 'Windstorm'
+        name: 'Windstorm',
+        telnumb2: '92728728923'
     };
 }

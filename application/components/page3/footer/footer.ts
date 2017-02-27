@@ -5,6 +5,7 @@ import {Component} from "@angular/core";
     templateUrl : 'footer.html',
 })
 export class FooterComponent {
-    telnumb:string = '+74951234567';
+    Input();
+    telnumb: 'Hero.telnumb2';
 
 }
