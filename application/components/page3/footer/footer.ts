@@ -4,11 +4,11 @@ import {Hero} from "../../../entity/hero";
 
 @Component({
     moduleId: module.id,
-    selector: 'my-hero-detail',
-    templateUrl: 'detail.html',
+    selector: 'my-hero-number',
+    templateUrl: '../footer/footer.html',
 })
 
-export class HeroDetailComponent {
+export class HeroNumberComponent {
     @Input()
     hero: Hero;
 }
