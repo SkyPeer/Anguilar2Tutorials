@@ -13,11 +13,8 @@ ng2PackageNames.forEach(function (pkgName) {
 System.config({
     transpiler: false,
     defaultJSExtensions: true,
-
     packages: packages,
-
     paths: {"npm:*": "node_modules/*"},
-
     map: {
         "@angular": "npm:@angular",
         "rxjs": "npm:rxjs",

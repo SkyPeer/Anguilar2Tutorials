@@ -11,15 +11,17 @@ import {Page4} from "../components/page4/page4";
 //import {FooterComponent} from "./.";
 import {HeroDetailComponent} from "../components/page3/detail/detail";
 import {HeroNumberComponent} from "../components/page3/footer/footer";
+import {HeroService} from "../components/page3/hero.service";
 
 @NgModule({
     // declarations: [Footercomponent],
     declarations: [Layout, Page1, Page2, Page3, Page4, HeroDetailComponent, HeroNumberComponent],
     imports: [BrowserModule, RoutingModule, FormsModule],
+    providers:[HeroService],
     bootstrap: [Layout]
 })
-export class InitModule {
+    export class InitModule {
 
-}
+    }
 
 
