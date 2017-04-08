@@ -1,5 +1,5 @@
 import { Hero } from '../../entity/hero';
-import { HEROES } from '../page3/heroesdb';
+import { HEROES } from '../../entity/heroesdb';
 import { Injectable } from '@angular/core';
 
 @Injectable()

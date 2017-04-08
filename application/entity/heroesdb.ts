@@ -1,4 +1,4 @@
-import {Hero} from "../../entity/hero";
+import {Hero} from "./hero";
 
 export const HEROES: Hero[] = [
     { id: 11, name: 'Mr. Nice', telnumb: '+2 31232323-20', },

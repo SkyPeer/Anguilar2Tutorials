@@ -9,9 +9,9 @@ import {Page2} from "../components/page2/page2";
 import {Page1} from "../components/page1/page1";
 import {Page4} from "../components/page4/page4";
 //import {FooterComponent} from "./.";
-import {HeroDetailComponent} from "../components/page3/detail/detail";
-import {HeroNumberComponent} from "../components/page3/footer/footer";
-import {HeroService} from "../components/page3/hero.service";
+import {HeroDetailComponent} from "../components/page4/detail/detail";
+import {HeroNumberComponent} from "../components/page4/footer/footer";
+import {HeroService} from "../components/page4/hero.service";
 
 import {AppComponent} from "../components/page5/app.component";
 //import {AppModule} from "../components/page5/app.module";
