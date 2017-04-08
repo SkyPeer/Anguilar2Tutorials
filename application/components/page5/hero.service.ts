@@ -7,7 +7,6 @@ export class HeroService2 {
   getHeroes(): Promise<Hero[]> {
     return Promise.resolve(HEROES);
   }
-
   getHeroesSlowly(): Promise<Hero[]> {
     return new Promise(resolve => {
       // Simulate server latency with 2 second delay
