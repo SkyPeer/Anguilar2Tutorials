@@ -8,22 +8,18 @@ import {Page3} from "../components/page3/page3";
 import {Page2} from "../components/page2/page2";
 import {Page1} from "../components/page1/page1";
 import {Page4} from "../components/page4/page4";
+import {Page5} from "../components/page5/page5";
 //import {FooterComponent} from "./.";
 import {HeroDetailComponent} from "../components/page4/detail/detail";
-import {HeroNumberComponent} from "../components/page4/footer/footer";
-import {HeroService} from "../components/page4/hero.service";
-
-import {Page5} from "../components/page5/page5";
-//import {AppModule} from "../components/page5/app.module";
+import {HeroNumberComponent} from "../components/layout/footer/footer";
+import {HeroService} from "../entity/hero.service";
 import {DashboardComponent} from "../components/page5/dashboard.component";
-import {HeroService2} from "../components/page5/hero.service";
 import {HeroDetailComponent2} from "../components/page5/hero-detail.component";
 import {HeroesComponent2} from "../components/page5/heroes.component"
 @NgModule({
-    // declarations: [Footercomponent],
-    declarations: [Layout, Page1, Page2, Page3, Page4, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent2, Page5],
+    declarations: [Layout, Page1, Page2, Page3, Page4, Page5, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent2],
     imports: [BrowserModule, RoutingModule, FormsModule],
-    providers:[HeroService, HeroService2, Page5],
+    providers:[HeroService, Page5],
     bootstrap: [Layout]
 })
 export class InitModule {

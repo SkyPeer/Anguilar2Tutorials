@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Hero } from '../../entity/hero';
-import { HeroService2 } from './hero.service';
+import { HeroService } from '../../entity/hero.service';
 
 @Component({
   moduleId: module.id,
@@ -16,7 +16,7 @@ export class HeroesComponent2 implements OnInit {
 
   constructor(
     private router: Router,
-    private heroService: HeroService2) { }
+    private heroService: HeroService) { }
 
   getHeroes(): void {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
