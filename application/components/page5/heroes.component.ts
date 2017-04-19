@@ -11,6 +11,7 @@ import { HeroService } from '../../entity/hero.service';
   styleUrls: [ './heroes.component.css' ]
 })
 export class HeroesComponent2 implements OnInit {
+  //export class HeroesComponent2 implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
 
