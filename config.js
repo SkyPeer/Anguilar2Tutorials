@@ -1,5 +1,6 @@
 var packages = {
-    "app": {"defaultExtension": "js"}
+    "app": {"defaultExtension": "js"},
+    "angular2-in-memory-web-api": { main: "index.js", defaultExtension: "js" }
 };
 
 var ng2PackageNames = [
