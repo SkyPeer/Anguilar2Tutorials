@@ -22,20 +22,21 @@ import {DashboardComponent} from "../components/page5/dashboard.component";
 import {HeroDetailComponent2} from "../components/page5/hero-detail.component";
 import {HeroesComponent2} from "../components/page5/heroes.component"
 
-// page6
-
-
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from '../components/page5/in-memory-data.service';
+import { HeroSearchComponent }  from '../components/page5/hero-search.component';
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
-        RoutingModule
+        RoutingModule,
+        InMemoryWebApiModule.forRoot(InMemoryDataService),
     ],
     declarations:
         [
-        Layout, Page1, Page2, Page3, Page4, Page5, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent2,
+        Layout, Page1, Page2, Page3, Page4, Page5, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent2, HeroSearchComponent
         ],
     providers:[HeroService, Page5],
     bootstrap: [Layout]

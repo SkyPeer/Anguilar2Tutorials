@@ -5,6 +5,7 @@ import { Location }               from '@angular/common';
 
 import { Hero }         from '../../entity/hero';
 import { HeroService }  from '../../entity/hero.service';
+
 @Component({
   moduleId: module.id,
   selector: 'hero-detail',
@@ -12,22 +13,27 @@ import { HeroService }  from '../../entity/hero.service';
   styleUrls: [ './hero-detail.component.css' ]
 })
 export class HeroDetailComponent2 implements OnInit {
- //export class HeroDetailComponent2 implements OnInit {
   hero: Hero;
 
   constructor(
-    private heroService: HeroService,
-    private route: ActivatedRoute,
-    private location: Location
+      private heroService: HeroService,
+      private route: ActivatedRoute,
+      private location: Location
   ) {}
 
   ngOnInit(): void {
     this.route.params
-      .switchMap((params: Params) => this.heroService.getHero(+params['id']))
-      .subscribe(hero => this.hero = hero);
+        .switchMap((params: Params) => this.heroService.getHero(+params['id']))
+        .subscribe(hero => this.hero = hero);
+  }
+
+  save(): void {
+    this.heroService.update(this.hero)
+        .then(() => this.goBack());
   }
 
   goBack(): void {
     this.location.back();
   }
 }
+
