@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { Hero } from '../../entity/hero';
 import { HeroService } from '../../entity/hero.service';
 
@@ -10,7 +9,7 @@ import { HeroService } from '../../entity/hero.service';
   templateUrl: './heroes.component.html',
   styleUrls: [ './heroes.component.css' ]
 })
-export class HeroesComponent2 implements OnInit {
+export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
 

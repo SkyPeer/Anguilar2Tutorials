@@ -6,7 +6,7 @@ import {Page3} from "./page3/page3";
 import {Page2} from "./page2/page2";
 import {Page1} from "./page1/page1";
 import { DashboardComponent }   from './page5/dashboard.component';
-import { HeroesComponent2 }      from './page5/heroes.component';
+import { HeroesComponent }      from './page5/heroes.component';
 import { HeroDetailComponent2 }  from './page5/hero-detail.component';
 
 
@@ -20,7 +20,7 @@ const routes: Routes = [
     {path: 'page5', component: Page5},
 
     { path: 'detail/:id', component: HeroDetailComponent2 },
-    { path: 'heroes',     component: HeroesComponent2 },
+    { path: 'heroes',     component: HeroesComponent },
     { path: 'dashboard',  component: DashboardComponent },
 
 ];
