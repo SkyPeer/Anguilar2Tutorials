@@ -10,7 +10,10 @@ import {Page2} from "../components/page2/page2";
 import {Page3} from "../components/page3/page3";
 import {Page4} from "../components/page4/page4";
 import {Page5} from "../components/page5/page5";
+import {Page6} from "../components/page6/page6";
 
+import {HeroM} from "../components/page6/hero.m";
+import {HeroF} from "../components/page6/hero.f";
 
 import {HeroDetailComponent} from "../components/page4/detail/detail";
 import {HeroNumberComponent} from "../components/layout/footer/footer";
@@ -35,7 +38,7 @@ import { HeroSearchComponent }  from '../components/page5/hero-search.component'
     ],
     declarations:
         [
-        Layout, Page1, Page2, Page3, Page4, Page5, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent, HeroSearchComponent
+        Layout, Page1, Page2, Page3, Page4, HeroM, HeroF, Page5, Page6, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent, HeroSearchComponent
         ],
     providers:[HeroService, Page5],
     bootstrap: [Layout]

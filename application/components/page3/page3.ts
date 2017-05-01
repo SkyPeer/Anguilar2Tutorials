@@ -13,6 +13,7 @@ export class Page3 {
     hero: Hero = {
         id: 1,
         name: 'Windstorm',
-        telnumb: '92728728923'
+        telnumb: '92728728923',
+        gender: 'M',
     };
 }
