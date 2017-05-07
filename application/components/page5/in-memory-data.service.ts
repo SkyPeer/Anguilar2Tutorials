@@ -11,6 +11,7 @@ export class InMemoryDataService implements InMemoryDbService {
             { id: 17, name: 'Dynama', telnumb: '+0 123231-17', gender: 'F'},
             { id: 18, name: 'Dr IQ', telnumb: '+0 1234567-18', gender: 'M'},
             { id: 19, name: 'Magma', telnumb: '+1 234347-19', gender: 'M'},
+            { id: 20, name: 'Tornado', telnumb: '+2 31232323-20', gender: 'M'},
             { id: 20, name: 'Tornado', telnumb: '+2 31232323-20', gender: 'M'}
         ];
         return {heroes};

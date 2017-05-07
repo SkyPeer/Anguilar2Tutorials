@@ -12,7 +12,7 @@ import { HeroService } from '../../entity/hero.service';
 export class HeroM implements OnInit {
     /*title = 'Tour of Heroes'; */
     heroes: Hero[];
-    selectedHero: Hero;
+    selectedHeroId: 11;
     constructor(private heroService: HeroService) { }
 
 
@@ -20,11 +20,15 @@ export class HeroM implements OnInit {
         this.heroService.getHeroes().then(heroes => this.heroes = heroes);
     }
 
+
     ngOnInit(): void {
         this.getHeroes();
     }
 
-    onSelect(hero: Hero): void {
-        this.selectedHero = hero;
-    }
+
+
+/*    onSelect(hero: Hero): void {
+        this.selectedHeroGender = 'M';
+
+    } */
 }

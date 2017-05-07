@@ -1,7 +1,7 @@
-import { OnInit } from '@angular/core';
-import { Component } from '@angular/core';
+import {OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Hero} from "../../entity/hero";
-import { HeroService } from '../../entity/hero.service';
+import {HeroService} from '../../entity/hero.service';
 
 @Component({
     moduleId: module.id,
