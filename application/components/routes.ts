@@ -20,12 +20,14 @@ const routes: Routes = [
     {path: 'page2', component: Page2},
     {path: 'page3', component: Page3},
     {path: 'page4', component: Page4},
-    {path: 'page5', component: Page5},
+    {path: 'page5', component: Page5,children:[
+        { path: 'detail/:id', component: HeroDetailComponent2 },
+        { path: 'heroes',     component: HeroesComponent },
+        { path: 'dashboard',  component: DashboardComponent },
+    ]},
     {path: 'page6', component: Page6},
 
-    { path: 'detail/:id', component: HeroDetailComponent2 },
-    { path: 'heroes',     component: HeroesComponent },
-    { path: 'dashboard',  component: DashboardComponent },
+
 
     { path: 'herom', component: HeroM},
     { path: 'herof', component: HeroF},
