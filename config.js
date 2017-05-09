@@ -12,6 +12,7 @@ ng2PackageNames.forEach(function (pkgName) {
 });
 
 System.config({
+    baseUrl: 'build/debug/app',
     transpiler: false,
     defaultJSExtensions: true,
     packages: packages,
@@ -23,4 +24,4 @@ System.config({
     }
 });
 
-System.import('build/debug/app/main');
+System.import('build/debug/app/index');

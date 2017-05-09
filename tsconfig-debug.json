@@ -12,9 +12,10 @@
         "outDir": "./build/debug/app",
         "typeRoots": [
             "./node_modules/@types"
-        ]
+        ],
+        "baseUrl": "application"
     },
     "include": [
-        "application/main.ts"
+        "application/index.ts"
     ]
 }

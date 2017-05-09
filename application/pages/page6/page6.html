@@ -1,0 +1,12 @@
+<h1>Page6.html</h1>
+<h1>{{title}}</h1>
+<nav>
+    <a routerLink="/herof" routerLinkActive="active">Sample DropdownList</a>
+    <a routerLink="/herofilter" routerLinkActive="active">Hero Filter</a>
+    <a routerLink="/herofiltered" routerLinkActive="active">Hero Filter2</a>
+</nav>
+<router-outlet></router-outlet>
+
+<gender (selectedGender)="dlselectedvalue"></gender>
+<dropdownlist-selected-value [dlselectedvalue]="dlselectedvalue"></dropdownlist-selected-value>
+
