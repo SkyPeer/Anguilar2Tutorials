@@ -9,9 +9,8 @@ import {Page1} from "./page1/page1";
 import { DashboardComponent }   from './page5/dashboard.component';
 import { HeroesComponent }      from './page5/heroes.component';
 import { HeroDetailComponent2 }  from './page5/hero-detail.component';
-import {HeroM} from './page6/hero.m';
 import {HeroF} from './page6/hero.f';
-
+import {HeroFilter} from './page6/hero.filter'
 
 
 const routes: Routes = [
@@ -26,11 +25,8 @@ const routes: Routes = [
         { path: 'dashboard',  component: DashboardComponent },
     ]},
     {path: 'page6', component: Page6},
-
-
-
-    { path: 'herom', component: HeroM},
-    { path: 'herof', component: HeroF},
+    {path: 'herof', component: HeroF},
+    {path: 'herofilter', component: HeroFilter},
 
 ];
 

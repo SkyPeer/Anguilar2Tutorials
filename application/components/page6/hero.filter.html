@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<h2>My Heroes GenderFilter</h2>
+<select class="form-control" [(ngModel)]="selectedHero">
+    <option *ngFor="let hero of heroes" [ngValue]="hero">{{hero.id}}</option>
+</select>
+<my-hero-show [hero]="selectedHero"></my-hero-show>

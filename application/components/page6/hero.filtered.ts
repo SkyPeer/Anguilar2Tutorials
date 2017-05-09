@@ -4,20 +4,20 @@ import {Hero} from "../../entity/hero";
 import {HeroService} from '../../entity/hero.service';
 
 @Component({
+    selector: 'my-hero-filter',
     moduleId: module.id,
     styleUrls: ['../page4/page4.css'],
-    templateUrl: 'hero.m.html'
+    templateUrl: 'hero.filtered.html'
 
 })
-export class HeroM implements OnInit {
+export class HeroFiltered implements OnInit {
+
     /*title = 'Tour of Heroes'; */
     heroes: Hero[];
     selectedHero: Hero;
 
     constructor(private heroService: HeroService) {
     }
-
-
     getHeroes(): void {
         let promise = this.heroService.getHeroes();
         promise.then(heroes => {
@@ -25,7 +25,6 @@ export class HeroM implements OnInit {
             this.heroes = heroes.filter(heroFilter)
         });
     }
-
     ngOnInit(): void {
         this.getHeroes();
     }
@@ -41,6 +40,9 @@ function heroFilter(f: Hero){
 }
 
 
+
+
+/*           SORTING
 function heroSort(a: Hero, b: Hero) {
     if (a.gender > b.gender) {
         return 1;
@@ -52,6 +54,11 @@ function heroSort(a: Hero, b: Hero) {
     return 0;
 
         }
+        */
+
+
+
+
 /* function responseHandler(heroes){
  return  bla-bla
  }
