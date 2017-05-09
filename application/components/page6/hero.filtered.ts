@@ -6,7 +6,6 @@ import {HeroService} from '../../entity/hero.service';
 const a = 'M';
 
 @Component({
-    @Input()
     selector: 'my-hero-filter',
     moduleId: module.id,
     styleUrls: ['../page4/page4.css'],
@@ -17,7 +16,6 @@ export class HeroFiltered implements OnInit {
     /*title = 'Tour of Heroes'; */
     heroes: Hero[];
     selectedHero: Hero;
-    selectedHeroGender: String;
 
     constructor(private heroService: HeroService) {
     }
@@ -37,7 +35,7 @@ export class HeroFiltered implements OnInit {
     }
 }
 function heroFilter(f: Hero){
-    if (f.gender == ){
+    if (f.gender == a){
         return f;
     }
 }

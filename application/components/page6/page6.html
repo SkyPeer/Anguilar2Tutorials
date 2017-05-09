@@ -6,3 +6,11 @@
     <a routerLink="/herofiltered" routerLinkActive="active">Hero Filter2</a>
 </nav>
 <router-outlet></router-outlet>
+
+<select name="select" [(ngModel)]="dlselectedvalue"> <!--Supplement an id here instead of using 'name'-->
+    <option [ngValue]="1">Value 1</option>
+    <option [ngValue]="2">Value 2</option>
+    <option [ngValue]="3">Value 3</option>
+</select>
+<dropdownlist-selected-value [dlselectedvalue]="dlselectedvalue"></dropdownlist-selected-value>
+

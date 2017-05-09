@@ -10,9 +10,9 @@ import { DashboardComponent }   from './page5/dashboard.component';
 import { HeroesComponent }      from './page5/heroes.component';
 import { HeroDetailComponent2 }  from './page5/hero-detail.component';
 import {HeroF} from './page6/hero.f';
-import {HeroFilter} from './page6/hero.filter'
-import {HeroFiltered} from './page6/hero.filtered'
-
+import {HeroFilter} from './page6/hero.filter';
+import {HeroFiltered} from './page6/hero.filtered';
+import {DropDownlistSelectedValue} from './page6/dropdownlist'
 const routes: Routes = [
     {path: '', redirectTo: '/page1', pathMatch:'full'},
     {path: 'page1', component: Page1},
@@ -27,7 +27,8 @@ const routes: Routes = [
     {path: 'page6', component: Page6},
     {path: 'herof', component: HeroF},
     {path: 'herofilter', component: HeroFilter},
-    {path: 'herofiltered', component: HeroFiltered}
+    {path: 'herofiltered', component: HeroFiltered},
+    {path: 'dropdownlistselectedvalue', component: DropDownlistSelectedValue}
 ];
 
 @NgModule({

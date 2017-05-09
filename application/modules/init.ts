@@ -28,7 +28,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from '../components/page5/in-memory-data.service';
 import { HeroSearchComponent }  from '../components/page5/hero-search.component';
 import {HeroFiltered} from "../components/page6/hero.filtered";
-
+import {DropDownlistSelectedValue} from "../components/page6/dropdownlist";
 @NgModule({
     imports: [
         BrowserModule,
@@ -39,7 +39,7 @@ import {HeroFiltered} from "../components/page6/hero.filtered";
     ],
     declarations:
         [
-        Layout, Page1, Page2, Page3, Page4, HeroF, Page5, Page6, HeroFilter, HeroFiltered, ShowHero, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent, HeroSearchComponent
+        Layout, Page1, Page2, Page3, Page4, HeroF, Page5, Page6, DropDownlistSelectedValue, HeroFilter, HeroFiltered, ShowHero, HeroDetailComponent, HeroNumberComponent, DashboardComponent, HeroDetailComponent2, HeroesComponent, HeroSearchComponent
         ],
     providers:[HeroService, Page5],
     bootstrap: [Layout]
