@@ -11,7 +11,7 @@ import { HeroesComponent }      from './page5/heroes.component';
 import { HeroDetailComponent2 }  from './page5/hero-detail.component';
 import {HeroF} from './page6/hero.f';
 import {HeroFilter} from './page6/hero.filter'
-
+import {HeroFiltered} from './page6/hero.filtered'
 
 const routes: Routes = [
     {path: '', redirectTo: '/page1', pathMatch:'full'},
@@ -27,7 +27,7 @@ const routes: Routes = [
     {path: 'page6', component: Page6},
     {path: 'herof', component: HeroF},
     {path: 'herofilter', component: HeroFilter},
-
+    {path: 'herofiltered', component: HeroFiltered}
 ];
 
 @NgModule({
